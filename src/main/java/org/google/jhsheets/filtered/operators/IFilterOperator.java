@@ -36,23 +36,23 @@ public interface IFilterOperator<T>
      */
     public static enum Type 
     {
-          NONE("No Filter")
-        , NOTSET("Not Set")
-        , EQUALS("Equals")
-        , NOTEQUALS("Not Equals")
-        , GREATERTHAN("Greater Than")
-        , GREATERTHANEQUALS("Equals/Greater Than")
-        , LESSTHAN("Less Than")
-        , LESSTHANEQUALS("Equals/Less Than")
-        , CONTAINS("Contains")
-        , STARTSWITH("Starts With")
-        , ENDSWITH("Ends With")
-        , BEFORE("Before")
-        , BEFOREON("Before Or On")
-        , AFTER("After")
-        , AFTERON("After Or On")
-        , TRUE("True")
-        , FALSE("False");
+          NONE("Без фильтра")
+        , NOTSET("Не задан")
+        , EQUALS("Равно")
+        , NOTEQUALS("Не равно")
+        , GREATERTHAN("Больше")
+        , GREATERTHANEQUALS("Больше или равно")
+        , LESSTHAN("Меньше")
+        , LESSTHANEQUALS("Меньше или равно")
+        , CONTAINS("Содержит")
+        , STARTSWITH("Начинается с")
+        , ENDSWITH("Заканчивается на")
+        , BEFORE("До")
+        , BEFOREON("До или в день")
+        , AFTER("После")
+        , AFTERON("после или в день")
+        , TRUE("Да")
+        , FALSE("Нет");
         
         private final String display;
         Type(String display) 
