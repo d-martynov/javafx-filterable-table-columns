@@ -96,18 +96,18 @@ extends PopupControl
 		
     	this.title = new SimpleStringProperty(title);
 		
-    	final Button sButton = new Button("Save");
+    	final Button sButton = new Button("Применить");
     	saveButton = new SimpleObjectProperty<>(sButton);
     	sButton.getStyleClass().add("save-button");
     	sButton.addEventFilter(KeyEvent.KEY_PRESSED, cancelEvent);
     	sButton.setDefaultButton(true);
     	
-    	final Button rButton = new Button("Reset");
+    	final Button rButton = new Button("Сбросить");
     	resetButton = new SimpleObjectProperty<>(rButton);
     	rButton.getStyleClass().add("reset-button");
     	rButton.addEventFilter(KeyEvent.KEY_PRESSED, cancelEvent);
     	
-    	final Button cButton = new Button("Cancel");
+    	final Button cButton = new Button("Отмена");
     	cancelButton = new SimpleObjectProperty<>(cButton);
     	cButton.getStyleClass().add("cancel-button");
     	cButton.addEventFilter(KeyEvent.KEY_PRESSED, cancelEvent);
