@@ -50,7 +50,7 @@ public interface IFilterOperator<T>
         , BEFORE("До")
         , BEFOREON("До или в день")
         , AFTER("После")
-        , AFTERON("после или в день")
+        , AFTERON("После или в день")
         , TRUE("Да")
         , FALSE("Нет");
         
